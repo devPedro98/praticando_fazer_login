@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela Login</title>
+    <title>{% block title %}Tela Login{% endblock title %}</title>
     <link rel="stylesheet" href="{% static 'fazerlogin/css/estilo.css' %}">
 </head>
+{% block content %}
 <body>
     <div id="container">
         <img src="{% static 'fazerlogin/img/perfil.png' %}" alt="Ícone do Perfil">
@@ -24,6 +25,9 @@
             <div>
                 <input class="submit" type="submit" value="Logar">
             </div>
+            <div>
+                <p>Não tem uma conta? <a href="/contas/registrar/">Clique aqui para se registrar!</a></p>
+            </div>
         </form>
     </div>
     <div align="center">
@@ -33,4 +37,5 @@
     </div>
     
 </body>
+{% endblock content %}
 </html>

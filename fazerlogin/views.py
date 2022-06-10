@@ -37,6 +37,3 @@ def submit_login(request):
             messages.error(request, "Usuário ou senha inválidos")
 
     return redirect('/')
-
-# def tela_login(request):
-    # return render(request, 'fazerlogin/html/formulario2.html')

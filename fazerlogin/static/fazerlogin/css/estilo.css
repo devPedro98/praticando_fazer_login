@@ -52,6 +52,7 @@ input.submit {
     padding: 5px 20px;
     height: 45px;
     width: 90%;
+    cursor: pointer;
     
     /* degrade */
     background: linear-gradient(to bottom, #faa600, #f68a00); 
